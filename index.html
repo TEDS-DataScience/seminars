@@ -13,6 +13,8 @@
 
 
 
+
+
     </script>
     <meta charset="utf-8">
     <title>TRANSDISCIPLINARY ECONOMETRICS & DATA SCIENCE SEMINAR - TEDS</title>
@@ -564,6 +566,8 @@ clear: both;
   color: black;
 }
 
+#more {display: none;}
+
 
 
 
@@ -714,6 +718,8 @@ function scrollFunction() {
 
 
 
+
+
 </script>
 <!--================-->
 <!--　　MAIN　　-->
@@ -766,7 +772,22 @@ function scrollFunction() {
                                     </tr>
                                     <tr>
                                         <td valign="top" width="6%">Abstract</td>
-                                        <td style="padding-left: 2vw;" width="79%">TBA</td>
+                                        <td style="padding-left: 2vw;" width="79%">Discrepancy measures between
+                                            probability distributions, often termed statistical distances, are
+                                            ubiquitous in probability theory, statistics and machine learning. <span
+                                                    id="dots">...</span><span id="more">To combat the curse of
+                                                dimensionality when estimating these distances from data, recent
+                                                work has proposed smoothing out local irregularities in the measured
+                                                distributions via convolution with a Gaussian kernel. Motivated by the
+                                                scalability of this framework to high dimensions, we investigate the
+                                                structural and statistical behavior of the Gaussian-smoothed
+                                                p-Wasserstein distance. In particular, we prove that the smoothed
+                                                p-Wasserstein distance enjoys a parametric empirical convergence
+                                                rate of n^{−1/2}, which contrasts the n^{−1/d} rate for unsmoothed
+                                                Wp when d >= 3. Also we discuss limit distribution theory for the
+                                                smooth 1-Wasserstein distance.</span><br>
+                                            &#9656;
+                                            <u onclick="myFunction()" id="myBtn">Read more</u></td>
                                     </tr>
                                     <tr>
                                         <td valign="top" width="6%">Venue</td>
@@ -844,7 +865,8 @@ function scrollFunction() {
                     You can ask further questions regardless of whether related to the presentation, or share some idea
                     with the guest or anyone of us, or introduce yourself to the others, or talk about anything as you
                     please. You can enter or leave freely during the seminar. We hope everybody could enjoy our seminar.
-                    <p >Participants are expected to behave in a manner respectful of the presenter and other participants.
+                    <p>Participants are expected to behave in a manner respectful of the presenter and other
+                        participants.
                         Organizers keep rights to mute and/or expel those who engage in inappropriate conduct.</p>
                     <div id="upcoming"></div>
                 </div>
@@ -1457,6 +1479,26 @@ Smooth p-Wasserstein distance: structure, empirical approximation, and applicati
         </table>
     </div>
 </div>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+</script>
 
 
 </body>
