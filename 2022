@@ -1,1 +1,1030 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+     <link rel="stylesheet" href="teds.css">
+    <title>TRANSDISCIPLINARY ECONOMETRICS & DATA SCIENCE SEMINAR, TEDS</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHSLM57DKB"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHSLM57DKB');
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0 " name="viewport">
+
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=STIX+Two+Text&Merriweather&Oswald:wght@700&display=swap"
+          rel="stylesheet">
+
+
+</head>
+
+<body>
+<div id="navbar">
+    <table align="center" border="0" cellpadding="0">
+        <tr>
+            <td><a href="https://teds-datascience.github.io/#next">
+                <div class="p5" style="font-size: 1vmax;">NEXT SEMINAR</div>
+            </a>
+            </td>
+            <td width="6vw"></td>
+            <td><a href="https://teds-datascience.github.io/#upcoming">
+                <div class="p5" style="font-size: 1vmax;">UPCOMING SEMINARS
+                </div>
+            </a></td>
+            <td width="6vw"></td>
+            <td><a href="https://teds-datascience.github.io/#past">
+                <div class="p5" style="font-size: 1vmax;">PAST SEMINARS
+                </div>
+            </a>
+            <td width="6vw"></td>
+            <td><a href="https://teds-datascience.github.io/#committee">
+                <div class="p5" style="font-size: 1vmax;">COMMITTEE
+                </div>
+            </a>
+            </td>
+            <td width="6vw"></td>
+            <td><a href="#HEADER">
+                <div class="p5" style="font-size: 1vmax;">TOP
+                </div>
+            </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!--================-->
+<!--　　HEADER　　-->
+<!--================-->
+<div id="HEADER">
+    <!--style="border-style: solid; border-width: 0px; border-top-width: 5px; border-color: #EE490D;"-->
+    <div class="container2" id="next" style="text-align: left; ">
+        <table border="0" class="main" width="90%">
+            <tr>
+                <td width="100%">
+                    <p class="p7"
+                       style="font-size: 2.3vmax; text-align: justify; text-align: Center;text-justify:auto; margin-top: 7vmin;margin-bottom: 0.8vmin; ">
+                        <font color=#ffffff>TRANSDISCIPLINARY ECONOMETRICS & DATA SCIENCE SEMINAR</font></p>
+                </td>
+            </tr>
+        </table>
+        <p class="p8" style="text-align: right; width:70%; height: 20%;">
+            <font color=#ffffff style="font-size: 1.5vmax;">SINCE 2021</font>
+        </p>
+
+
+        <table border="0" class="main" width="79%">
+            <tr>
+                <td width="100%">
+                    <p class="p7" style="font-size: 1.5vmax; text-align: Center; text-align: justify;
+                text-justify:auto;  margin-top: 2.5vmin; margin-bottom: 2.5vmax;">
+                        <font color=#ffffff>
+                            TEDS is co-organized by scholars from Chinese Academy of Sciences, Hong Kong University of
+                            Science and Technology, Jilin University, Kobe University,
+                            Kyoto Sangyo University, Kyoto University, Nanyang Technological University,
+                            New York University, Otaru University of Commerce, Seoul National University, Shanghai
+                            University of Finance & Economics and Tohoku University.
+                            We provide a platform for econometricians and statisticians to interact and engage
+                            with each other while sharing their newest research findings. We welcome
+                            researchers and students in different countries and research
+                            fields of Econometrics, Statistics and Data Science to join our seminar.
+                        </font>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table style="box-shadow: 2px 2px 2px #eeeeee;" width="100%">
+        <tr>
+            <td width="100%">
+                <table align="center" border="0" cellpadding="0" cellspacing="25vw">
+                    <tr>
+
+                        <td><a href="https://teds-datascience.github.io/seminars/#next">
+                            <div class="p5" style="font-size: 1vmax;">NEXT SEMINAR</div>
+                        </a>
+                        </td>
+                        <td width="5vw"></td>
+                        <td><a href="https://teds-datascience.github.io/seminars/#upcoming">
+                            <div class="p5" style="font-size: 1vmax;">UPCOMING SEMINARS
+                            </div>
+                        </a></td>
+                        <td width="5vw"></td>
+                        <td><a href="https://teds-datascience.github.io/seminars/#past">
+                            <div class="p5" style="font-size: 1vmax;">PAST SEMINARS
+                            </div>
+                        </a>
+                        <td width="5vw"></td>
+                        <td><a href="https://teds-datascience.github.io/seminars/#committee">
+                            <div class="p5" style="font-size: 1vmax;">COMMITTEE
+                            </div>
+                        </a>
+                        </td>
+                        <td width="5vw"></td>
+                        <td><a href="#HEADER">
+                            <div class="p5" style="font-size: 1vmax;">TOP
+                            </div>
+                        </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+}
+</script>
+
+
+<div>
+    <!--<div id="2022New_Year"></div>-->
+
+
+
+
+            <div id="past" class="anchor"></div>
+            <h2>Past Seminars</h2>
+            <table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. Toru Kitagawa" src=" Toru Kitagawa.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">December/8/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">9:00~10:30</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="http://www.homepages.ucl.ac.uk/~uctptk0/"
+                            style="text-decoration:underline;">
+                           Toru Kitagawa</a> Brown University and University College London 
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Policy Choice in Time Series by Empirical Welfare Maximization
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">This paper develops a novel method for policy choice in a dynamic setting where the available data is a multivariate time series. Building on the statistical treatment choice framework, we propose Time-series Empirical Welfare Maximization (T-EWM) methods to estimate an optimal policy rule for the current period or over multiple periods by maximizing an empirical welfare criterion constructed using nonparametric potential outcome time-series. We characterize conditions under which T-EWM consistently learns a policy choice that is optimal in terms of conditional welfare given the time-series history. We then derive a non-asymptotic upper bound for conditional welfare regret and its minimax lower bound. To illustrate the implementation and uses of T-EWM, we perform simulation studies and apply the method to estimate optimal monetary policy rules from macroeconomic time-series data.
+                </td>
+                </tr>
+		<tr>
+               <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://ntu-sg.zoom.us/j/83472680751"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID: Meeting ID: 834 7268 0751   Passcode: 692224
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://econ.snu.ac.kr/people/faculty?mode=view&profidx=88"
+                           style="text-decoration:underline; font-family: Oswald;">Ryo Okui</a> The University of Tokyo
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS, JSPS KAKENHI (B) No. 22H00833 (Liu).
+                    </td>
+                </tr>
+		     </table>
+         <h1></h1> 
+         <table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof.Yohei Yamamoto" src="Yohei Yamamoto.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">November/8/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">10:00~11:30</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://sites.google.com/site/yoheiyama/"
+                            style="text-decoration:underline;">
+                          Yohei Yamamoto</a> Hitotsubashi University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Anthropogenic influence on extremes and risk hotspots
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">Study of the frequency and magnitude of climate extremes as the world warms is of utmost importance, especially separating the influence of natural and anthropogenic forcing factors. Record-breaking temperature and precipitation events were studied using event-attribution techniques. Here, we provide spatial and temporal observation-based analyses of the role of natural and anthropogenic factors, using state-of-the-art time series methods. We show that the risk from extreme temperature and rainfall events has severely increased for most regions worldwide. We also identify risk hotspots defined as regions for which increased risk of extreme events and high exposure in terms of either high Gross Domestic Product (GDP) or large population are both present. For the year 2018, increased anthropogenic forcings are mostly responsible for increased risk to extreme temperature/precipitation affecting 94%/72% of global population and 97%/76% of global GDP relative to the baseline period 1961-1990.
+                </td>
+                </tr>
+		<tr>
+                <td valign="top" width="6%">Video</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://www.youtube.com/watch?v=P_UhYbG-rKQ">Click here to watch the video</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://sites.google.com/site/wenjiemetrics/home"
+                           style="text-decoration:underline; font-family: Oswald;">Wenjie Wang</a> Nanyang Technological University 
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Nanyang Technological University
+                    </td>
+                </tr>
+		     </table>
+       <h1></h1> 
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof.Jungbin Hwang" src="Jungbin Hwang.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">October/14/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">10:00 ~ 11:30</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://hwang.econ.uconn.edu/"
+                            style="text-decoration:underline;">
+                          Jungbin Hwang</a> University of Connecticut
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Fixed-Cluster Inference with Unbalanced Cluster Sizes
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">This paper provides asymptotic distribution and approximation theory for clustered data with a fixed number of large-sized clusters, allowing cluster sizes to be heterogeneous. In developing new inference procedures under fixed-cluster asymptotics, we make the following contributions. First, we show that the fixed-cluster asymptotic distribution of cluster-robust Wald statistic can be represented by a quadratic form of a standard normal vector with an
+independent random weighting matrix, where the random weighting matrix is equal in distribution to a weighted sum of independent Wishart matrices. Second, we develop a convenient F-approximation to the nonstandard fixed-cluster limiting distribution. The key intuition is that a scaled Wishart matrix can well approximate the random weighting matrix in the fixed-cluster limit of the Wald statistic with a proper choice of degree of freedom. We also show that the equivalent degree of freedom in our F-approximation connects to the equivalent number of clusters in Carter et al.’s (2013). Lastly, we establish the fixed-G asymptotic distribution and F-approximation for the test based on the jackknife CCE and prove its built-in bias adjustment function.
+                </td>
+                </tr>
+		<tr>
+               <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://ntu-sg.zoom.us/j/86916060736"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID:869 1606 0736
+			    Passcode:104168
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://sites.google.com/site/wenjiemetrics/home"
+                           style="text-decoration:underline; font-family: Oswald;"> Wenjie Wang</a> Nanyang Technological University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Nanyang Technological University
+                    </td>
+                </tr>
+		     </table>
+       <h1></h1> 
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. Martin Weidner" src="Martin Weidner.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">September/29/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">17:00~18:30</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://users.ox.ac.uk/~econ0610/"
+                            style="text-decoration:underline;">
+                          Martin Weidner</a> University of Oxford
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Bounds on Average Effects in Discrete Choice Panel Data
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">Average effects in discrete choice panel data models with individual-specific fixed effects are generally only partially identified in short panels. While consistent estimation of the identified set is possible, it generally requires very large sample sizes, especially when the number of support points of the observed covariates is large, such as when the covariates are continuous. In this paper, we propose estimating outer bounds on the identified set of average effects. Our bounds are easy to construct, converge at the parametric rate, and are computationally simple to obtain even in moderately large samples, independent of whether the covariates are discrete or continuous. We also provide asymptotically valid confidence intervals on the identified set. Simulation studies confirm that our approach works well and is informative in finite samples. We also consider an application to labor force participation.
+                </td>
+                </tr>
+		 <tr>
+			  <td valign="top" width="6%">Video</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://www.youtube.com/watch?v=DmrMlnLhZlc">Click here to watch the video</a>
+                </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://econ.snu.ac.kr/people/faculty?mode=view&profidx=88"
+                           style="text-decoration:underline; font-family: Oswald;">Ryo Okui</a> The University of Tokyo
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS, JSPS KAKENHI (B) No. 22H00833 (Liu).
+                    </td>
+                </tr>
+		     </table>
+       <h1></h1> 
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. Wenjie Wang" src="Wenjie Wang.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">September/28/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">10:00</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://sites.google.com/site/wenjiemetrics/home"
+                            style="text-decoration:underline;">
+                          Wenjie Wang</a> Nanyang Technological University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Wild Bootstrap Inference for Instrumental Variables Regressions with Weak and Few Clusters
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">We study the wild bootstrap inference for instrumental variable regressions with a small number of large clusters. We first show that the wild bootstrap Wald test controls size asymptotically up to a small error as long as the parameters of endogenous variables are strongly identified in at least one of the clusters and has power against local alternatives if the parameters of endogenous variables are strongly identified in five or six clusters. We further develop a wild bootstrap Anderson-Rubin test for the full-vector inference and show that it controls size asymptotically even under weak identification in all clusters. We illustrate their good performance using simulations and provide an empirical application to a well-known dataset about US local labor markets.
+                </td>
+                </tr>
+		<tr>
+               <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://www.zoom.us/j/9625852673?from=join#success"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID: 9625852673
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="http://biz.jlu.edu.cn/info/1052/3521.htm"
+                           style="text-decoration:underline; font-family: Oswald;">Dayu Liu</a> Jilin University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Center for Quantitative Economics of Jilin University
+                    </td>
+                </tr>
+		     </table>
+       <h1></h1> 
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="A/Prof. Yang Feng" src="yangfeng.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">August/27/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">9:30</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://yangfeng.hosting.nyu.edu/"
+                            style="text-decoration:underline;">
+                          Yang Feng </a> New York University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Transfer Learning under High-dimensional Generalized Linear Models
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">In this work, we study the transfer learning problem under high-dimensional generalized linear models (GLMs), which aim to improve the fit on target data by borrowing information from useful source data. Given which sources to transfer, we propose a transfer learning algorithm on GLM, and derive its ℓ1/ℓ2-estimation error bounds as well as a bound for a prediction error measure. The theoretical analysis shows that when the target and source are sufficiently close to each other, these bounds could be improved over those of the classical penalized estimator using only target data under mild conditions. When we don't know which sources to transfer, an algorithm-free transferable source detection approach is introduced to detect informative sources. The detection consistency is proved under the high-dimensional GLM transfer learning setting. We also propose an algorithm to construct confidence intervals of each coefficient component, and the corresponding theories are provided. Extensive simulations and a real-data experiment verify the effectiveness of our algorithms. We implement the proposed GLM transfer learning algorithms in a new R package glmtrans, which is available on CRAN.
+                </td>
+                </tr>
+		<tr>
+               <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://www.zoom.us/j/9625852673?from=join#success"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID: 9625852673
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="http://biz.jlu.edu.cn/info/1052/3522.htm"
+                           style="text-decoration:underline; font-family: Oswald;">Han Liu </a> Jilin University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Center for Quantitative Economics of Jilin University
+                    </td>
+                </tr>
+		     </table>
+       <h1></h1>
+		<table border="0" class="main" width="80%">
+                    <tr>
+                        <td style="padding-bottom: 1vmax;" width="100%">
+                            <table align="center" border="0" cellspacing="0" id="demo_1"
+                                   style="font-size: 1.2vmax; text-justify:auto;"
+                                   width="100%">
+                                <tbody>
+                                <tr>
+                                    <td align="center" valign="top" width="3%"></td>
+                                    <td align="left" style="box-shadow: 0 0 0 1px #c4c4c4 inset;
+                                    border-top-width: 0px; border-left-width: 0px; border-right-width: 1px;
+                                    border-bottom-width: 1px; border-color: #ffffff;" valign="top" width="44%">
+                                        <img alt="Image" src="DS.jpg"
+                                             style="border-bottom: 0px solid #c4c4ce;"
+                                             width="100%">
+                                        <!--src="shikotsuko2.png" alt="Lake Shikotsu"-->
+                                        <div style="line-height: 2vmax; padding: 20px">
+                                            <div class="row">
+                                                <div class="subcolumn1" style="background-color:#ffffff;">
+                                                    <img style="padding-top: 8px;"
+                                                         alt="Speaker" src="Hansen.jpg" width="100%">
+                                                </div>
+                                                <div class="subcolumn2" style="background-color:#ffffff;">
+                                                    <div style="line-height: 2vmax; padding: 0px; text-align: justify; text-justify:auto;">
+                                            <table border="0" class="main" style="font-size: 1.2vmax;" width="100%">
+                                                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://www.ssc.wisc.edu/~bhansen/"
+                            style="text-decoration:underline;">
+                         Bruce E. Hansen</a> University of Wisconsin-Madison
+                    </td>
+                </tr>
+                                                <tr>
+
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">August/26/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">10:00 ~ 11:30</td>
+                </tr>
+
+                 <tr>
+			  <td valign="top" width="6%">Video</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://www.youtube.com/watch?v=GPWb6Sg7gDI&t=693s">Click here to watch the video</a>
+                </td>
+                    
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="http://www.econ.kobe-u.ac.jp/en/people/course/econometrics/sueishi.html"
+                           style="text-decoration:underline; font-family: Oswald;">Naoya Sueishi</a> Kobe University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                    <td style="padding-left: 2vw;" width="79%" valign="top">TEDS,  JSPS KAKENHI (B) No. 22H00833 (Liu).
+                    </td>
+                </tr>
+                                            </table>
+                                        </div>
+                                                    <div style="padding-bottom: 8px; font-family: Roboto;">
+                                                        <a href="https://www.ssc.wisc.edu/~bhansen/papers/cv.htm"
+                                                           style="text-decoration:underline;">
+                                                            Selected Publications</a>
+                                                    </div>
+                                                    <div class="main" style="text-align: justify; text-justify:auto;">
+                                                        <li style=" padding-bottom: 8px;">A Modern Gauss-Markov Theorem, Econometrica, (2022), 90, 1283-1294.
+                                                        <li style=" padding-bottom: 8px;">Inference for Iterated GMM Under Misspecification, with Seojeong Lee, Econometrica, (2021), 89, 1419-14447.
+                                                        </li>
+                                                        <li style=" padding-bottom: 8px;">Least Squares Model Averaging, Econometrica, (2007), 75, 1175-1189.
+                                                        </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </td>
+
+                                    <!--<td width="6%" valign="top" align="center"></td>-->
+                                    <td align="center" style="padding-bottom: 2vmax;" valign="top" width="1%">
+                                        <font color=#ffffff>abc</font></td>
+                                    <td align="left" style="box-shadow: 0 0 0 1px #c4c4c4 inset;
+                                    border-top-width: 0px; border-left-width: 0px; border-right-width: 1px;
+                                    border-bottom-width: 1px; border-color: #ffffff;"
+                                        valign="top" width="44%">
+                                        <img alt="Image" src="DS2.jpg"
+                                             style="border-bottom: 0px solid #c4c4ce;"
+                                             width="100%">
+                                        <div style="line-height: 2vmax; padding: 20px; text-align: justify; text-justify:auto;">
+                                            <table border="0" class="main" style="font-size: 1.2vmax;" width="100%">
+
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Standard Errors for Two-Way Clustering with Serially Correlated Time Effects
+</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">We propose improved standard errors and an asymptotic distribution theory for two-way clustered panels. Our proposed estimator and theory allow for arbitrary serial dependence in the common time effects, which is excluded by existing two-way methods, including the popular two-way cluster standard errors of Cameron, Gelbach, and Miller (2011) and the cluster bootstrap of Menzel (2021). Our asymptotic distribution theory is the first which allows for this level of inter-dependence among the observations. Under weak regularity conditions, we demonstrate that the least squares estimator is asymptotically normal, our proposed variance estimator is consistent, and t-ratios are asymptotically standard normal, permitting conventional inference. We present simulation evidence that confidence intervals constructed with our proposed standard errors obtain superior coverage performance relative to existing methods. We illustrate the relevance of the proposed method in an empirical application to a standard Fama-French three-factor regression.
+
+                </td>
+                </tr>
+
+                                            </table>
+                                        </div>
+
+                                        <hr color="#FFFFFF" size="0px">
+                                    </td>
+                                    <td align="center" valign="top" width="3%"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+		<h1></h1>
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. Degui Li" src="Degui Li.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">August/19/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">16:00~17:30</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://www.york.ac.uk/maths/staff/degui-li/"
+                            style="text-decoration:underline;">
+                          Degui Li </a> University of York
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%"> Estimating Time-Varying Networks for High-Dimensional Time Series
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%"> We explore time-varying networks for high-dimensional locally stationary time series, using large VAR with both transition and (error) precision matrices evolving smoothly over time. Two types of time-varying graphs are considered: one containing directed edges of Granger causality linkages, and the other containing undirected edges of partial correlation linkages. Under the sparse structural assumption, we propose a penalised local linear estimation method with weighted time-varying (or group) LASSO to jointly estimate the transition matrices and identify their significant entries, and a time-varying CLIME method to estimate the precision matrix. The estimated transition and precision matrices are then used to determine the time-varying network structures. Under some mild conditions, we derive the theoretical properties of the proposed estimates including the oracle and consistency properties. Extensive simulation studies are provided to illustrate the finite-sample performance.
+                </td>
+                </tr>
+		<tr>
+               <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://ntu-sg.zoom.us/j/84615700936"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID: 846 1570 0936  
+			    Passcode: 403626
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://personal.ntu.edu.sg/qfeng/"
+                           style="text-decoration:underline; font-family: Oswald;">Qu Feng </a> Nanyang Technological University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                   <td style="padding-left: 2vw;" width="79%" valign="top"> TEDS and Nanyang Technological University
+                    </td>
+                </tr>
+		     </table>
+                                  
+        <h1></h1>
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. Ostu" src="Otsu.jpg" width="100%"></td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">July/08/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">11:30~13:00</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="https://www.lse.ac.uk/economics/people/faculty/taisuke-otsu"
+                            style="text-decoration:underline;">
+                          Taisuke Otsu</a>The London School of Economics and Political Sciences
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Likelihood Inference Under Alternative Asymptotics
+			</tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">The seminar will be based on the following three papers: (i) Empirical Likelihood for Network Data (with Yukitoshi Matsushita); (ii) Multiway Empirical Likelihood (with Harold Chiang and Yukitoshi Matsushita); (iii) Jackknife Empirical Likelihood: Small Bandwidths, Sparse Network and High-Dimensional Asymptotics (with Yukitoshi Matsushita).
+                </td>
+                </tr>
+		<tr>
+               <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href=" https://cuhk-edu-cn.zoom.us/j/3131769518?pwd=czVmbkZmVFRGb0dBNXFYY0RWVllhdz09"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID: 313 176 9518
+			    Passcode: 119549
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://sites.google.com/view/chenqihui"
+                           style="text-decoration:underline; font-family: Oswald;">Qihui Chen</a> The Chinese University of Hong Kong, Shenzhen
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                   <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and The Chinese University of Hong Kong, Shenzhen
+                    </td>
+                </tr>
+		     </table>
+        <h1></h1>
+		<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+                <tr>
+                    <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. shi zhentao" src="Shi zhentao.jpg" width="100%">
+                    </td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">May/27/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">9:30 ~ 11:00</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="http://zhentaoshi.github.io/"
+                            style="text-decoration:underline;">
+                         Zhentao Shi</a> Georgia Institute of Technology
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Boosted Hodrick-Prescott Filter Is More General Than You Think</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">Recent historical economic events such as the Great Recession and the Covid-19 recession have reignited the debate on econometric methodology for filtering low-frequency macroeconomic time series. While the Hodrick-Prescott (HP) filter remains, arguably, the off-the-shelf choice, the boosted HP (bHP) filter emerges as its modern machine learning upgrade for the data-rich environment. This paper sheds light on understanding the versatility of bHP in fitting time series of various nonstationary patterns. We establish a new asymptotic result that each iteration of the HP filter shrinks complex exponential functions proportionally toward zero. This founding opens a unified approach to tackle trends generated by unit root processes, higher order integrated processes, and local-to-unity processes. In an asymptotic framework where the penalty tuning parameter expands with the sample size, this theoretical property explains the smoothing effect of the original HP filter, and more importantly, it guarantees that the bHP filter consistently restores all the underlying trending processes mentioned above, in conjunction with potential deterministic trends and structural breaks. When it is applied to the universe of the FRED-QD dataset, bHP timely captures the downturns at crises and recessions and the recoveries that followed. Buttressed by its sound theoretical coverage and empirical performance, the automated bHP filtering procedure is well suited as a general-purpose machine for low-frequency macroeconomic time series.
+                </td>
+                </tr>
+               
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://zhangxinyu.weebly.com"
+                           style="text-decoration:underline; font-family: Oswald;">Xinyu Zhang</a> Chinese Academy of Sciences
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                    <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Chinese Academy of Sciences
+                    </td>
+                </tr>
+                </table>
+        <h1></h1>
+	 <table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+            <tr>
+                <td rowspan="10" style="padding-right: 1vw;" valign="top"
+                        width="15%">
+                        <img alt="Prof. SHIMOTSU Katsumi" src="SHIMOTSU_Katsumi.jpg" width="100%">
+                    </td>
+                    <td valign="top" width="6%">Date</td>
+                    <td style="padding-left: 2vw;" width="79%">April/26/2022</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Time</td>
+                    <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%"></td>
+                    <td style="padding-left: 2vw;" width="79%">10:50 ~ 12:20</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Speaker</td>
+                    <td style="padding-left: 2vw;" width="79%"><a
+                            href="http://www.e.u-tokyo.ac.jp/fservice/faculty/shimotsu/shimotsu-e/shimotsu01-e.html"
+                            style="text-decoration:underline;">
+                        Katsumi Shimotsu</a> The University of Tokyo
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Title</td>
+                    <td style="padding-left: 2vw;" width="79%">Testing the Order of Multivariate Normal Mixture Models</td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Abstract</td>
+                     <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">Finite mixtures of multivariate normal distributions have
+                    been widely used in empirical applications in diverse fields such as statistical genetics and
+                    statistical finance. Testing the number of components in multivariate normal mixture models is a
+                    long-standing challenge even in the most important case of testing homogeneity. This paper develops
+                    a likelihood-based test of the null hypothesis of M components against the alternative hypothesis of
+                    M+1 components for a general M>=1. We derive the asymptotic distribution of the proposed EM test
+                    statistic under the null hypothesis and local alternatives and show the validity of parametric
+                    bootstrap. The simulations show that the proposed test has good finite sample size and power
+                    properties.
+                </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Zoom</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://hosei-ac-jp.zoom.us/j/85773027215?pwd=ZlkxNlk5NzBNN1RvNGpCRGxQVmVDQT09
+"
+                            style="text-decoration:underline; font-family: Oswald;">Click here to join the Zoom
+                        Meeting</a> Meeting ID: 857 7302 7215 Passcode: 674245
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Venue</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://ise-hp.ws.hosei.ac.jp/access/"
+                            style="text-decoration:underline; font-family: Oswald;">Koganei Campus, Hosei University.</a> If you want to join in person, please contact qliu@hosei.ac.jp.
+                        </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"
+                        width="79%">
+                        <a href="https://qingfeng-liu.github.io/index.html"
+                           style="text-decoration:underline; font-family: Oswald;">Qingfeng Liu</a> Hosei University
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="6%">Hosts</td>
+
+                    <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Hosei University
+                    </td>
+                </tr>
+                
+        </table>
+	<h1></h1>  
+
+	<table border="0" class="main" style="font-size: 1.2vmax;" width="75%">
+            <tr>
+                <td rowspan="9" style="padding-right: 1vw;" valign="top"
+                    width="15%">
+                    <img alt="Prof. Jinchi Lv" src="jinchi Lv.png" width="100%">
+                </td>
+                <td valign="top" width="6%">Date</td>
+                <td style="padding-left: 2vw;" width="79%">April/12/2022</td>
+            </tr>
+            <tr>
+                <td valign="top" width="6%">Time</td>
+                <td style="padding-left: 2vw;" width="79%">Japan Standard Time (UTC+9h)</td>
+            </tr>
+            <tr>
+                <td valign="top" width="6%"></td>
+                <td style="padding-left: 2vw;" width="79%">10:00 ~ 11:30</td>
+            </tr>
+            <tr>
+                <td valign="top" width="6%">Speaker</td>
+                <td style="padding-left: 2vw;" width="79%"><a
+                        href="https://www.marshall.usc.edu/personnel/jinchi-lv">
+                    Jinchi Lv</a> University of Southern California
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="6%">Title</td>
+                <td style="padding-left: 2vw;" width="79%">High-Dimensional Knockoffs Inference for Time Series Data</td>
+            </tr>
+            <tr>
+                <td valign="top" width="6%">Abstract</td>
+                <td style="padding-left: 2vw;text-align: justify;
+                text-justify:auto; " width="79%">The recently introduced framework of model-X knockoffs provides a flexible tool for exact finite-sample false discovery rate (FDR) control in variable selection in arbitrary dimensions without assuming any dependence structure of the response on covariates. It also completely bypasses the use of conventional p-values, making it especially appealing in high-dimensional nonlinear models. Existing works have focused on the setting of independent and identically distributed observations. Yet time series data is prevalent in practical applications in various fields such as economics and social sciences. This motivates the study of model-X knockoffs inference for time series data. In this paper, we make some initial attempt to establish the theoretical and methodological foundation for the model-X knockoffs inference for time series data. We suggest the method of time series knockoffs inference (TSKI) by exploiting the idea of subsampling to alleviate the difficulty caused by the serial dependence. We establish sufficient conditions under which the original model-X knockoffs inference combined with subsampling still achieves the asymptotic FDR control. Our technical analysis reveals the exact effect of serial dependence on the FDR control. To alleviate the practical concern on the power loss because of reduced sample size cause by subsampling, we exploit the idea of knockoffs with copies and multiple knockoffs. Under fairly general time series model settings, we show that the FDR remains to be controlled asymptotically. To theoretically justify the power of TSKI, we further suggest the new knockoff statistic, the backward elimination ranking (BE) statistic, and show that it enjoys both the sure screening property and controlled FDR in the linear time series model setting. The theoretical results and appealing finite-sample performance of the suggested TSKI method coupled with the BE are illustrated with several simulation examples and an economic inflation forecasting application. This is a joint work with Chien-Ming Chi, Yingying Fan and Ching-Kang Ing.
+                </td>
+            </tr>
+            <tr>
+               <td valign="top" width="6%">Video</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top"><a
+                            href="https://www.youtube.com/watch?v=YuRIuM1NWys">Click here to watch the video</a>
+                </td>
+            </tr>
+            <tr>
+                    <td valign="top" width="6%">Chair</td>
+                    <td style="padding-left: 2vw;"width="79%"><a href="https://researchmap.jp/uematsu0911?lang=en"
+                           style="text-decoration:underline; font-family: Oswald;">Yoshimasa Uematsu</a> Hitotsubashi University
+                    </td>
+                </tr>
+            <tr>
+                    <td valign="top" width="6%">Hosts</td>
+                    <td style="padding-left: 2vw;" width="79%" valign="top">TEDS and Hitotsubashi University 
+                    </td>
+                </tr>
+        </table>
+         <h1 id="end"></h1>
+        </div>
+
+        <!--<img style="padding-bottom: 2vw;" width="100%" src="Lake_Shikotsu.png" alt="TEDS">-->
+        <div class="container3" style="text-align: left; ">
+
+            <hr style="border: 1px solid transparent; margin-top: 20px; padding-top: 10px; padding-bottom: 30px;">
+            <table border="0" class="main" width="90%">
+                <tr>
+                    <td width="100%">
+                        <p class="p7" style="font-size: 2.2vmax; text-align: justify; text-justify:auto;"><font
+                                color=#ffffff>Transdisciplinary Econometrics & Data Science Seminar - TEDS</font>
+                        </p>
+                        <hr style="border: 1px solid transparent;">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <p class="p7"
+                           style="font-size: 1.5vmax; text-align: left; text-align: justify; text-justify:auto;">
+                            <font color=#ffffff>
+                                TEDS gratefully acknowledges the supports of the Japan Society for the Promotion of
+                                Science
+                                through KAKENHI Grant (B) No. 22H00833 (Qingfeng Liu), Nanyang Technological
+                                University,
+                                Joint Research Program of KIER, Kyoto University and Chinese Academy of Sciences.
+                            </font>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <hr color="#FFFFFF" style=" margin-top: 10px; margin-bottom: 10px;" width="90%">
+            <table border="0" class="main" width="90%">
+                <tr>
+                    <td width="100%">
+                        <p class="p7" style="text-align: right; width: 100%;"><font color=#ffffff> E-mail: </font><a
+                                href="mailto: tedsseminars@gmail.com"><font
+                                color=#ffffff>tedsseminars@gmail.com</font></a></p>
+                    </td>
+                </tr>
+            </table>
+            <h2></h2>
+            <table border="0" class="main" style="padding-bottom: 100px;" width="100%">
+                <tr>
+                    <td width="100%">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+    </script>
+    <script>
+function moreFunction() {
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more";
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less";
+    moreText2.style.display = "inline";
+  }
+}
+
+
+    </script>
+
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"
+            type="text/javascript">
+    </script>
+
+</div>
+</div>
+</body>
+</html>
