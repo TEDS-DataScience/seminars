@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-  width: 75%;
+  width: 80%;
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: Normal;
@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  width: 75%;
+  width: 80%;
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: Normal;
@@ -116,13 +116,13 @@ p.p3 {
         font-family: "Oswald";
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 80%;
         <!-- -webkit-text-stroke: #000000 -->
     }
     p.p7 {
         margin: 0.0px 0.0px 0.0px 0.0px;
         font-size: 1.5vmax;
-        font-weight: Bold;
+        font-weight: 500;
         font-family: "Oswald";
         color: #EE490D;
         color: #EE490D;
@@ -135,7 +135,7 @@ p.p3 {
         font-family: "Oswald";
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
+        width: 80%;
         <!-- -webkit-text-stroke: #000000 -->
     }
 
@@ -269,12 +269,12 @@ div,dl,dt,dd,ul,ol,li,h4,h5,h6,pre,form,fieldset,blockquote{margin:0;padding:0;}
 
 a:link {
 	color:  #3498DB/*#000080*/; text-decoration:none;
-	font-weight: 600;
+	font-weight: 500;
 	font-family: Roboto;
 }
 a:visited {
 	color:  #3498DB; text-decoration:underline; /*#358AC3; */
-	font-weight: 600;
+	font-weight: 500;
 	font-family: Roboto;
 }
 a:hover {
@@ -287,12 +287,12 @@ a:active {
 a.color1:link{
     color: #626567;
 	text-decoration:underline;
-	font-weight: 600;
+	font-weight: 500;
 	font-family: Roboto;
 }
 a.color1:visited {
 	color:  #626567; text-decoration:underline; /*#358AC3; */
-	font-weight: 600;
+	font-weight: 500;
 	font-family: Roboto;
 }
 a.color1:hover {
