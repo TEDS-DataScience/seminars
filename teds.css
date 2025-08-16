@@ -269,12 +269,12 @@ div,dl,dt,dd,ul,ol,li,h4,h5,h6,pre,form,fieldset,blockquote{margin:0;padding:0;}
 
 a:link {
 	color:  #3498DB/*#000080*/; text-decoration:none;
-	font-weight: Bold;
+	font-weight: 600;
 	font-family: Roboto;
 }
 a:visited {
 	color:  #3498DB; text-decoration:underline; /*#358AC3; */
-	font-weight: Bold;
+	font-weight: 600;
 	font-family: Roboto;
 }
 a:hover {
@@ -287,12 +287,12 @@ a:active {
 a.color1:link{
     color: #626567;
 	text-decoration:underline;
-	font-weight: Bold;
+	font-weight: 600;
 	font-family: Roboto;
 }
 a.color1:visited {
 	color:  #626567; text-decoration:underline; /*#358AC3; */
-	font-weight: Bold;
+	font-weight: 600;
 	font-family: Roboto;
 }
 a.color1:hover {
