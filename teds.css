@@ -28,6 +28,214 @@ body {
   width: 100%;
   height: auto;
 }
+/* ===== Next Seminar layout ===== */
+
+.next-seminar {
+  max-width: 80%;
+  margin: 0 auto;                 /* ← 中央配置 */
+  display: flex;
+  justify-content: center;        /* ← 中央寄せの要 */
+  gap: 2rem;
+  font-family: "STIX Two Text", "Merriweather", serif;
+  color: #222;
+}
+
+/* 左：画像 */
+.ns-image {
+  flex: 0 0 32%;
+  display: flex;
+  justify-content: center;        /* 画像自体も中央 */
+}
+
+.ns-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 右：情報 */
+.ns-info {
+  flex: 1;
+}
+
+/* 1行 */
+.ns-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.6em;
+}
+
+/* 左列（Event / Title / …） */
+.ns-label {
+  flex: 0 0 18%;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 右列（内容） */
+.ns-value {
+  flex: 1;
+  padding-left: 0.6em;
+}
+
+/* リンク */
+.ns-value a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.ns-value a:hover {
+  text-decoration: underline;
+}
+
+/* Outer width must match the site's existing blocks (table.main width="80%") */
+.ns-wrap{
+  width:80%;
+  margin:0 auto;
+}
+
+/* Mobile: match the site's typical narrower content */
+@media (max-width: 768px){
+  .ns-wrap{ width:80%; }
+}
+
+/* ===== NEXT SEMINAR (PC: image only + info block side-by-side / Mobile: stack) ===== */
+
+.ns-wrap{
+  width:80%;
+  margin:0 auto;
+  color:#222;
+  font-family:"STIX Two Text","Merriweather",serif;
+}
+
+/* ===== Next Seminar layout (PC: 1:1 only, isolated) ===== */
+
+/* ===== Next Seminar (PC only: 45% image / 55% text) ===== */
+/* ===== Next Seminar (PC only: image left-aligned, 45% / 55%) ===== */
+@media (min-width: 769px){
+  .next-seminar{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    display:flex;
+    align-items:flex-start;
+    gap:2rem;
+    box-sizing:border-box;
+  }
+
+  .next-seminar .ns-image{
+    flex:0 0 calc(45% - 1rem);   /* gap(2rem)の半分を引く */
+    max-width:calc(45% - 1rem);
+    display:block;
+    box-sizing:border-box;
+  }
+
+  .next-seminar .ns-info{
+    flex:0 0 calc(55% - 1rem);   /* gap(2rem)の半分を引く */
+    max-width:calc(55% - 1rem);
+    box-sizing:border-box;
+    min-width:0;
+  }
+
+  .next-seminar .ns-image img{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+}
+
+  .next-seminar .ns-image a,
+  .next-seminar .ns-image img{
+    display:block;
+  }
+  .next-seminar .ns-image img{
+    width:100%;
+    height:auto;
+  }
+
+  .next-seminar .ns-row{
+    display:flex;
+    align-items:flex-start;
+    column-gap:0.8rem;
+    margin:0 0 0.7rem 0;
+  }
+  .next-seminar .ns-label{
+    flex:0 0 60px;
+    font-weight:600;
+    white-space:nowrap;
+  }
+  .next-seminar .ns-value{
+    flex:1;
+    min-width:0;
+  }
+  .next-seminar .ns-value a{
+    color:#4a90e2;
+    text-decoration:none;
+    word-break:break-word;
+  }
+  .next-seminar .ns-value a:hover{
+    text-decoration:underline;
+  }
+
+
+/* Mobile fix only (replace your @media (max-width: 768px){ ... } block with this) */
+@media (max-width: 768px){
+  .next-seminar{
+    max-width:100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;     /* image row, then info row */
+    justify-content:flex-start;
+    align-items:stretch;
+    gap:1rem;
+    box-sizing:border-box;
+  }
+
+  /* image: one full-width row (no centering flex) */
+  .next-seminar .ns-image{
+    width:100%;
+    flex:0 0 auto;
+    display:block;
+    box-sizing:border-box;
+  }
+
+  .next-seminar .ns-image img{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+
+  /* info: one full-width row */
+  .next-seminar .ns-info{
+    width:100%;
+    flex:0 0 auto;
+    min-width:0;
+    box-sizing:border-box;
+  }
+
+  /* label + value stay horizontal */
+  .next-seminar .ns-row{
+    display:flex;
+    align-items:flex-start;
+    column-gap:0.8rem;
+    margin:0 0 0.8rem 0;
+  }
+
+  .next-seminar .ns-label{
+    flex:0 0 80px;             /* Event column width on mobile */
+    font-weight:600;
+    white-space:nowrap;
+  }
+
+  .next-seminar .ns-value{
+    flex:1;
+    min-width:0;
+  }
+
+  .next-seminar .ns-value a{
+    word-break:break-word;
+  }
+}
 
 h1 {
   width: 80%;
